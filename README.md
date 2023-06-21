@@ -42,6 +42,16 @@ A key feature of Apache Kafka is that of retention, which is the durable storage
 
 As mentinoed previously, one of the main benefits of Kafka is its ability to scale out. This is done by having multiple clusters, which allows for the segregation of types of data, isolation for security requirements and multiple datacenters for disaster recovery. 
 
+## Stream Processing
+
+A data stream is an abstraction representing an unbounded dataset. Unbounded means infinite and ever growing. We can look at a stream of credit card transactions, stock trades, emails sent, moves in a game, or in this case, flights landing in Boston.
+
+An event stream is ordered (events happen sequentially) which is what helps distingusih between a database table (note ORDER BY) and an event stream. 
+
+Other features of event streams:
+  * event streams are immutable (WORM)
+  * event streams are replayable - required to correct efforts, try new methods of analysis or perform audits.
+
 ## Key Takeaways
 
 I worked on this project before realizing the full benefit of working in a virtual environment or Docker container. 
@@ -50,5 +60,7 @@ I worked on this project before realizing the full benefit of working in a virtu
 
 I had also experimented launching this whole project on the cloud using an Amazon EC2 instance. However, the free tier t2.micro instance is unequipped to handle Confluent Platform due to 
 its limited resources and thus a bigger machine would be required to carry out this task.
+
+https://youtu.be/Ts06yH69lSU 
 
 
