@@ -42,6 +42,10 @@ A key feature of Apache Kafka is that of retention, which is the durable storage
 
 As mentinoed previously, one of the main benefits of Kafka is its ability to scale out. This is done by having multiple clusters, which allows for the segregation of types of data, isolation for security requirements and multiple datacenters for disaster recovery. 
 
+## Key Takeaways
+
+I worked on this project before realizing the full benefit of working in a virtual environment or Docker container. 
+
 ## Next Steps
 
 I had also experimented launching this whole project on the cloud using an Amazon EC2 instance. However, the free tier t2.micro instance is unequipped to handle Confluent Platform due to 
