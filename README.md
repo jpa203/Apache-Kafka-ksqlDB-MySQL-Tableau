@@ -3,11 +3,16 @@ A data engineering project using Apache Kafka, Confluent Platform, Python, kSQLD
 
 ## Project Outline
 
+![image](https://github.com/jpa203/kakfa_streaming_project/assets/104007355/4d4bc9ef-b50b-448b-afc2-5f475a5447bb)
+
+
 This project aims to mimick a real-life data engineering project by ingesting real-time flight data at Boston Logan International Airport from a REST API, 
 conducting some transformations in kSQLDB and loading results into a data mart in mySQL for downstream analysis using Tableau. 
 
 The inspiration is to create a stream processing service whereby the data is transformed in real time for further processing. The end product is a real-time dashboard where, for example, the marketing 
 branch of a tourism company can see the most popular flight destinations in and out of Boston, which airlines are most popular, and so on.
+
+At one point, this project was to exist totally on a cloud platform - but doing so would result in going beyond Amazon's free tier luxuries. Hence, this was scraped, but for the sake of practice - an S3 bucket acted as a consumer of the data to act as a pseudo data lake.
 
 ## About Apache Kafka
 
