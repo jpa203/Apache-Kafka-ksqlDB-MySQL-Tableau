@@ -1,0 +1,1 @@
+create stream flights_csv with (VALUE_FORMAT = 'delimited', KAFKA_TOPIC ='flights_csv') as select capital, currency_code, population from flight_data emit changes; 
