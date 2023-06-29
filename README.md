@@ -12,7 +12,7 @@ conducting some transformations in kSQLDB and loading results into a data mart i
 The inspiration is to create a stream processing service whereby the data is transformed in real time for further processing. The end product is a real-time dashboard where, for example, the marketing 
 branch of a tourism company can see the most popular flight destinations in and out of Boston, which airlines are most popular, and so on.
 
-At one point, this project was to exist totally on a cloud platform - but doing so would result in going beyond Amazon's free tier luxuries. Hence, this was scraped, but for the sake of practice - an S3 bucket acted as a consumer of the data to act as a pseudo data lake.
+At one point, this project was to exist totally on a cloud platform - but doing so would result in going beyond Amazon's free tier luxuries. Hence, this was scrapped, but for the sake of practice - an S3 bucket acted as a consumer of the data to act as a pseudo data lake.
 
 ## About Apache Kafka
 
