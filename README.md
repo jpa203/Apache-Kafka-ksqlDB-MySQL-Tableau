@@ -1,5 +1,10 @@
 # kakfa_streaming_project
-A data engineering project using Apache Kafka, Confluent Platform, Python, kSQLDB, MySQL and Tableau
+A data engineering project using Apache Kafka, Confluent Platform, Python, kSQLDB, MySQL and Tableau.
+
+Project video below:
+
+https://youtu.be/Ts06yH69lSU 
+
 
 ## Project Outline
 
@@ -42,6 +47,19 @@ A key feature of Apache Kafka is that of retention, which is the durable storage
 
 As mentinoed previously, one of the main benefits of Kafka is its ability to scale out. This is done by having multiple clusters, which allows for the segregation of types of data, isolation for security requirements and multiple datacenters for disaster recovery. 
 
+## About kSQLDB
+
+This project made use of the ksqlDB - a lightweight, databaes system purposefully built for event streaming.
+
+You can use ksqlDB to build event streaming applications from Apache Kafka topics by using only SQL statements and queries. ksqlDB is built on Kafka Streams, so a ksqlDB application communicates with a Kafka cluster like any other Kafka Streams application.
+
+![image](https://github.com/jpa203/Apache-Kafka-ksqlDB-MySQL-Tableau/assets/104007355/ddffcfa3-b9fa-45dc-86d6-557212f0dd78)
+
+Streams, i.e. materialized views, were used to aggregate and filter data before feeding it into a denormalized table in MySQL.
+
+The result from the generated Kafka Streams application is a persistent query that writes continuously to its output topic until the query is terminated.
+
+
 ## Stream Processing
 
 A data stream is an abstraction representing an unbounded dataset. Unbounded means infinite and ever growing. We can look at a stream of credit card transactions, stock trades, emails sent, moves in a game, or in this case, flights landing in Boston.
@@ -58,9 +76,6 @@ I worked on this project before realizing the full benefit of working in a virtu
 
 ## Next Steps
 
-I had also experimented launching this whole project on the cloud using an Amazon EC2 instance. However, the free tier t2.micro instance is unequipped to handle Confluent Platform due to 
-its limited resources and thus a bigger machine would be required to carry out this task.
-
-https://youtu.be/Ts06yH69lSU 
+I had also experimented launching this whole project on the cloud using an Amazon EC2 instance. However, the free tier t2.micro instance is unequipped to handle Confluent Platform due to  its limited resources and thus a bigger machine would be required to carry out this task.
 
 
